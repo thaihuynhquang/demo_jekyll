@@ -17,3 +17,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+staticmanURL: "https://staticmanthaiviwedding.vercel.app/v3/entry/github/demo_jekyll/main/comments"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
