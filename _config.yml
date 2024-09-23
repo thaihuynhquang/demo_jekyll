@@ -40,7 +40,7 @@ defaults:
     values:
       layout: "default"
 
-staticmanURL: "https://staticmanthaiviwedding.vercel.app/v3/entry/github/demo_jekyll/main/comments"
+staticmanURL: "https://staticmanthaiviwedding.vercel.app/v3/entry/github/thaihuynhquang/demo_jekyll/main/comments"
 
 plugins:
   - jekyll-feed
