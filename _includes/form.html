@@ -9,4 +9,5 @@
   <input type="text" name="fields[name]" placeholder="Name" required>
   <textarea name="fields[comment]" placeholder="Comment" required></textarea>
   <button type="submit">Submit</button>
+  <input hidden type="text" name="options[redirect]" value="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 </form>
