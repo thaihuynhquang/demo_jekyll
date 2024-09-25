@@ -1,4 +1,11 @@
-<form {% if jekyll.environment == "production" %}action="{{ site.staticman.production.url }}"{% else %}action="{{ site.staticman.development.url }}"{% endif %} method="POST">
+<form
+  method="POST"
+  {% if jekyll.environment == "production" %}
+    action="{{ site.staticman.production.url }}"
+  {% else %}
+    action="{{ site.staticman.development.url }}"
+  {% endif %}
+>
   <input type="text" name="fields[name]" placeholder="Name" required>
   <textarea name="fields[comment]" placeholder="Comment" required></textarea>
   <button type="submit">Submit</button>
