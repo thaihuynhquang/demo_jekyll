@@ -17,8 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-baseurl: "/demo_jekyll" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "/demo_jekyll" # the subpath of your site, e.g. /blog
 
 collections:
   authors:
@@ -40,7 +39,11 @@ defaults:
     values:
       layout: "default"
 
-staticmanURL: "https://staticmanthaiviwedding.vercel.app/v3/entry/github/thaihuynhquang/demo_jekyll/main/comments"
+staticman:
+  production:
+    url: "https://staticman-kvnc.onrender.com/v2/entry/thaihuynhquang/demo_jekyll/main/comments"
+  development:
+    url: "http://127.0.0.1/v2/entry/thaihuynhquang/demo_jekyll/main/comments"
 
 plugins:
   - jekyll-feed
